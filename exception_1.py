@@ -7,4 +7,4 @@ def ask_user(question, answer):
             print("Спасибо, пока!")
     except KeyboardInterrupt:
         print("Пока!")            
-ask_user(input(), input())   
+ask_user(input(), input())
