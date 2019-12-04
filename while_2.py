@@ -8,7 +8,11 @@ def ask_user(question):
         if question in questions:
             print(mydict[question])
             break
+        else:
+            print("Пока!")
+            break
 ask_user(input())        
+
 
  
        
