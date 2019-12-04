@@ -1,15 +1,16 @@
-mydict = {"Кто ты?": "Программист!", 
-"Что делаешь?": "Программирую",
-"Где ты?":"Дома"}
+def ask_user(question):
+    mydict = {"Кто ты?": "Программист!", 
+    "Что делаешь?": "Программирую",
+    "Где ты?":"Дома",
+    "Как дела?":"Хорошо"}
+    questions = mydict.keys()
+    while True:
+        if question in questions:
+            print(mydict[question])
+            break
+ask_user(input())        
 
-def ask_user(question, answer):
-    while question == "Как дела?" and answer != "Хорошо":
-        print(question)
-        answer = str(input())
-    if answer == "Хорошо":
-        print("Спасибо, пока!")    
-
-ask_user(input(), input())  
+ 
        
 
 
