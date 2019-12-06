@@ -10,8 +10,8 @@ def ask_user(question, answer):
 
     if question == "Как дела?":
         while answer!="Хорошо":
-            #print(question)
             answer = input()
+            print(question)
         if answer == "Хорошо":
             print("Спасибо, пока!")
 
